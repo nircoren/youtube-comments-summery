@@ -155,7 +155,7 @@ export async function POST(req: Request, context: any) {
   const { video_id } = context.params;
   try {
     const props = await getPropsByEmail(email)
-    if (!props || props.videoUsedCount >= 10) {
+    if (!props || (!props.isPayed  && props.videoUsedCount >= 10)) {
       throw new Error("You reached your limit. Please buy subscription to keep using youtube-summery");
     }
     const apiKey = process.env.YOUTUBE_API_KEY;

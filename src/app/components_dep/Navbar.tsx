@@ -1,5 +1,5 @@
 import React from "react";
-import LoginGoogle from "./LoginGoogle";
+import LoginGoogle from "./authSection";
 import { SessionProvider } from "next-auth/react";
 
 function Navbar() {
