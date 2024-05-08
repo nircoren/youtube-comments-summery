@@ -155,8 +155,22 @@ export async function POST(req: Request, context: any) {
   const { video_id } = context.params;
   try {
     const props = await getPropsByEmail(email)
-    if (!props || (!props.isPayed  && props.videoUsedCount >= 10)) {
-      throw new Error("You reached your limit. Please buy subscription to keep using youtube-summery");
+    debugger
+    if (!props) {
+      return NextResponse.json(
+        { responseText: "Please login to google account to use youtube-comments-summery." },
+        {
+          status: 401,
+        }
+      );
+    }
+    if ((!props.isPayed  && props.videoUsedCount >= 10)) {
+      return NextResponse.json(
+        { responseText: "You reached your limit. Please buy subscription to keep using youtube-summery." },
+        {
+          status: 403,
+        }
+      );
     }
     const apiKey = process.env.YOUTUBE_API_KEY;
     const maxResults = 75;

@@ -16,7 +16,7 @@ export default function LoginGoogle() {
               Sign out
             </button>
             <p className="hidden px-7 py-3 text-base font-medium text-dark hover:opacity-70 dark:text-white md:block">
-              {session?.user?.name}!
+              Signed in as {session?.user?.name}
             </p>
             <img
               className="w-12 rounded-full"
