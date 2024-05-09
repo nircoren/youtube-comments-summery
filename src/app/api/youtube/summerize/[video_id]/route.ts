@@ -157,8 +157,15 @@ export async function POST(req: Request, context: any) {
     const props = await getPropsByEmail(email)
     debugger
     if (!props) {
+      // TODO:Create account?
+      // const user = await prisma.user.create({
+      //   data: {
+      //     email: email,
+      //     name: 'Elsa Prisma',
+      //   },
+      // })
       return NextResponse.json(
-        { responseText: "Please login to google account to use youtube-comments-summery." },
+        { responseText: "Please signup to google account to use youtube-comments-summery." },
         {
           status: 401,
         }
