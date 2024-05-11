@@ -17,28 +17,24 @@ export default function LoginGoogle() {
                 src={session.user?.image ?? ""}
                 alt=""
               />
-              <div 
-                  className="dropdown-content z-[1] menu"
-                  tabIndex={0}
-              >
-                <ul
-                  className="p-2 shadow bg-base-100 rounded-box w-52 divide-y"
-                >
-                  <li
-                  className="p-2"
-                  >
-                    Signed in as {session.user?.name}
-                  </li>
+              <div className="dropdown-content z-[1] menu" tabIndex={0}>
+                <ul className="p-2 shadow bg-base-100 rounded-box w-52 divide-y">
+                  <li className="p-2">Signed in as {session.user?.name}</li>
                   <li>
                     <a>Item 1</a>
                   </li>
                   <li>
-                    <a>Item 2</a>
+                    <a>
+                      <Link
+                        href="/settings"
+                        className="hidden px-7 py-3 text-base font-medium text-dark hover:opacity-70 dark:text-white md:block"
+                      >
+                        Billing
+                      </Link>
+                    </a>
                   </li>
                   <li>
-                    <a
-                      onClick={() => signOut()}
-                    >Sign out</a>
+                    <a onClick={() => signOut()}>Sign out</a>
                   </li>
                 </ul>
               </div>
