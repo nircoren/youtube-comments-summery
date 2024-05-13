@@ -4,10 +4,12 @@ import nodemailer from 'nodemailer'
 // Handles POST requests to /api
 
 
+
+
 export async function POST(request: any) {
 
-    const username = process.env.NEXT_PUBLIC_BURNER_USERNAME;
-    const password = process.env.NEXT_PUBLIC_BURNER_PASSWORD;
+    const username = process.env.NEXT_PUBLIC_EMAIL_USERNAME;
+    const password = process.env.NEXT_PUBLIC_EMAIL_PASSWORD;
     const myEmail = process.env.NEXT_PUBLIC_PERSONAL_EMAIL;
 
 
@@ -17,10 +19,10 @@ export async function POST(request: any) {
     const email = formData.get('email')
     const message = formData.get('message')
 
-
+    debugger
     // create transporter object
     const transporter = nodemailer.createTransport({
-        host: "smtp-mail.outlook.com",
+        host: "smtp-relay.brevo.com",
         port: 587,
         tls: {
             ciphers: "SSLv3",
@@ -35,7 +37,7 @@ export async function POST(request: any) {
     });
 
     try {
-
+        console.log('mailwa')
         const mail = await transporter.sendMail({
             from: username,
             to: myEmail,

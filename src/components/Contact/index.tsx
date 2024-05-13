@@ -1,6 +1,8 @@
+'use client';
+
 import NewsLatterBox from "./NewsLatterBox";
 
-const Contact = () => {
+const Contact = async () => {
   async function handleSubmit(event: any) {
     event.preventDefault();
 
