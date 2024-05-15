@@ -8,7 +8,7 @@ import menuData from "./menuData";
 import { Menu } from "@/types/menu";
 
 import { SessionProvider } from "next-auth/react";
-import AuthSection from "@/app/components_dep/authSection";
+import NavAuth from "./NavAuth";
 
 const Header = () => {
   // Navbar toggle
@@ -61,20 +61,7 @@ const Header = () => {
                   sticky ? "py-5 lg:py-2" : "py-8"
                 } `}
               >
-                <Image
-                  src="/images/logo/logo-2.svg"
-                  alt="logo"
-                  width={140}
-                  height={30}
-                  className="w-full dark:hidden"
-                />
-                <Image
-                  src="/images/logo/logo.svg"
-                  alt="logo"
-                  width={140}
-                  height={30}
-                  className="hidden w-full dark:block"
-                />
+                <h2 className="gradient-text lg:text-2xl">Summerize YT</h2>
               </Link>
             </div>
             <div className="flex w-full items-center justify-between px-4">
@@ -167,7 +154,7 @@ const Header = () => {
               </div>
               <div className="flex items-center justify-end pr-16 lg:pr-0">
                 <SessionProvider>
-                  <AuthSection/>
+                  <NavAuth/>
                 </SessionProvider>
                 <div>
                   <ThemeToggler />

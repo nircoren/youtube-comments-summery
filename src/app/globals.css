@@ -50,5 +50,29 @@
   input#checkboxLabel:checked ~ .box span {
     @apply opacity-100;
   }
+
+  .gradient-text {
+    /* logo */
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    /* primary gradiant */
+    background: linear-gradient(180deg, #4f59e9 0%, #8547f9 90.5%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
 }
 
+h3{
+  @apply mb-5 text-4xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-4xl md:leading-tight mb-8;
+}
+.btn {
+  @apply text-white px-4 py-1 rounded;
+  background: linear-gradient(180deg, #4f59e9 0%, #8547f9 90.5%);
+  border: none;
+  line-height: 0;
+}
+
+@import "style/custom.css";
