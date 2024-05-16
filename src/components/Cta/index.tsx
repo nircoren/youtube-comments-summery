@@ -9,11 +9,9 @@ function Cta() {
     >
       <div className="container flex flex-col items-center">
         <h3>Summerize Your Comments Now!</h3>
-        <p className="text-base text-center text-white mb-8">
+        <p className="text-base max-w-screen-sm text-center text-white mb-8">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
           deserunt optio quod, error totam maiores sit et? Provident praesentium
-          totam dolor tempore porro cum, consequuntur facilis? Nostrum accusamus
-          nisi assumenda.
         </p>
         <Link href="#pricing" className="btn">
           Go Pro

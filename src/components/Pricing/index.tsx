@@ -1,160 +1,70 @@
-"use client";
+'use client'
 import { useState } from "react";
-import SectionTitle from "../Common/SectionTitle";
-import OfferList from "./OfferList";
-import PricingBox from "./PricingBox";
-
-const Pricing = () => {
-  const [isMonthly, setIsMonthly] = useState(true);
+const Pricing: React.FC = () => {
+  const [billingCycle, setBillingCycle] = useState<'monthly' | 'yearly'>('monthly');
 
   return (
-    <section id="pricing" className="relative z-10 py-16 md:py-20 lg:py-28">
-      <div className="container">
-        <SectionTitle
-          title="Pick your poison"
-          paragraph="Ready to declutter your YouTube experience? Get started for free and never look back."
-          center
-          width="665px"
-        />
-
-        <div className="w-full">
-          <div className="mb-8 flex justify-center md:mb-12 lg:mb-16">
-            <span
-              onClick={() => setIsMonthly(true)}
-              className={`${
-                isMonthly
-                  ? "pointer-events-none text-primary"
-                  : "text-dark dark:text-white"
-              } mr-4 cursor-pointer text-base font-semibold`}
-            >
-              Monthly
-            </span>
-            <div
-              onClick={() => setIsMonthly(!isMonthly)}
-              className="flex cursor-pointer items-center"
-            >
-              <div className="relative">
-                <div className="h-5 w-14 rounded-full bg-[#1D2144] shadow-inner"></div>
-                <div
-                  className={`${
-                    isMonthly ? "" : "translate-x-full"
-                  } shadow-switch-1 absolute left-0 top-[-4px] flex h-7 w-7 items-center justify-center rounded-full bg-primary transition`}
-                >
-                  <span className="active h-4 w-4 rounded-full bg-white"></span>
-                </div>
-              </div>
-            </div>
-            <span
-              onClick={() => setIsMonthly(false)}
-              className={`${
-                isMonthly
-                  ? "text-dark dark:text-white"
-                  : "pointer-events-none text-primary"
-              } ml-4 cursor-pointer text-base font-semibold`}
-            >
-              Yearly
-            </span>
-          </div>
-        </div>
-
-        <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
-          <PricingBox
-            packageName="Lite"
-            price={isMonthly ? "40" : "120"}
-            duration={isMonthly ? "mo" : "yr"}
-            subtitle="Lorem ipsum dolor sit amet adiscing elit Mauris egestas enim."
-          >
-            <OfferList text="All UI Components" status="active" />
-            <OfferList text="Use with Unlimited Projects" status="active" />
-            <OfferList text="Commercial Use" status="active" />
-            <OfferList text="Email Support" status="active" />
-            <OfferList text="Lifetime Access" status="inactive" />
-            <OfferList text="Free Lifetime Updates" status="inactive" />
-          </PricingBox>
-          <PricingBox
-            packageName="Basic"
-            price={isMonthly ? "399" : "789"}
-            duration={isMonthly ? "mo" : "yr"}
-            subtitle="Lorem ipsum dolor sit amet adiscing elit Mauris egestas enim."
-          >
-            <OfferList text="All UI Components" status="active" />
-            <OfferList text="Use with Unlimited Projects" status="active" />
-            <OfferList text="Commercial Use" status="active" />
-            <OfferList text="Email Support" status="active" />
-            <OfferList text="Lifetime Access" status="active" />
-            <OfferList text="Free Lifetime Updates" status="inactive" />
-          </PricingBox>
-          <PricingBox
-            packageName="Plus"
-            price={isMonthly ? "589" : "999"}
-            duration={isMonthly ? "mo" : "yr"}
-            subtitle="Lorem ipsum dolor sit amet adiscing elit Mauris egestas enim."
-          >
-            <OfferList text="All UI Components" status="active" />
-            <OfferList text="Use with Unlimited Projects" status="active" />
-            <OfferList text="Commercial Use" status="active" />
-            <OfferList text="Email Support" status="active" />
-            <OfferList text="Lifetime Access" status="active" />
-            <OfferList text="Free Lifetime Updates" status="active" />
-          </PricingBox>
-        </div>
+    <div className="bg-gray-900 text-white py-16 px-4">
+      <div className="text-center mb-12">
+        <h1 className="text-4xl font-bold">Choose Plan That's Right For You</h1>
+        <p className="text-lg mt-2">Choose the plan that works best for you, feel free to contact us</p>
       </div>
-
-      <div className="absolute bottom-0 left-0 z-[-1]">
-        <svg
-          width="239"
-          height="601"
-          viewBox="0 0 239 601"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
+      <div className="flex justify-center mb-8">
+        <button
+          className={`px-6 py-2 mx-2 rounded ${billingCycle === 'monthly' ? 'bg-purple-600' : 'bg-gray-700'}`}
+          onClick={() => setBillingCycle('monthly')}
         >
-          <rect
-            opacity="0.3"
-            x="-184.451"
-            y="600.973"
-            width="196"
-            height="541.607"
-            rx="2"
-            transform="rotate(-128.7 -184.451 600.973)"
-            fill="url(#paint0_linear_93:235)"
-          />
-          <rect
-            opacity="0.3"
-            x="-188.201"
-            y="385.272"
-            width="59.7544"
-            height="541.607"
-            rx="2"
-            transform="rotate(-128.7 -188.201 385.272)"
-            fill="url(#paint1_linear_93:235)"
-          />
-          <defs>
-            <linearGradient
-              id="paint0_linear_93:235"
-              x1="-90.1184"
-              y1="420.414"
-              x2="-90.1184"
-              y2="1131.65"
-              gradientUnits="userSpaceOnUse"
-            >
-              <stop stopColor="#4A6CF7" />
-              <stop offset="1" stopColor="#4A6CF7" stopOpacity="0" />
-            </linearGradient>
-            <linearGradient
-              id="paint1_linear_93:235"
-              x1="-159.441"
-              y1="204.714"
-              x2="-159.441"
-              y2="915.952"
-              gradientUnits="userSpaceOnUse"
-            >
-              <stop stopColor="#4A6CF7" />
-              <stop offset="1" stopColor="#4A6CF7" stopOpacity="0" />
-            </linearGradient>
-          </defs>
-        </svg>
+          Bill Monthly
+        </button>
+        <button
+          className={`px-6 py-2 mx-2 rounded ${billingCycle === 'yearly' ? 'bg-purple-600' : 'bg-gray-700'}`}
+          onClick={() => setBillingCycle('yearly')}
+        >
+          Bill Yearly
+        </button>
       </div>
-    </section>
+      <div className="flex flex-col md:flex-row justify-center items-center gap-8">
+        <div className="bg-gray-800 p-8 rounded-lg shadow-lg w-full max-w-xs">
+          <h2 className="text-xl font-semibold">Free</h2>
+          <h3 className="text-4xl font-bold mt-4">$0</h3>
+          <ul className="mt-6 space-y-2">
+            <li>2 Users</li>
+            <li>2 Files</li>
+            <li>Public Share & Comments</li>
+            <li>Chat Support</li>
+            <li>New income apps</li>
+          </ul>
+          <button className="mt-6 bg-purple-600 py-2 px-4 rounded">Signup for free</button>
+        </div>
+        <div className="bg-purple-600 p-8 rounded-lg shadow-lg w-full max-w-xs relative">
+          <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-yellow-500 text-gray-900 rounded-full px-3 py-1 text-sm font-bold">
+            POPULAR
+          </div>
+          <h2 className="text-xl font-semibold">Pro</h2>
+          <h3 className="text-4xl font-bold mt-4">$8</h3>
+          <ul className="mt-6 space-y-2">
+            <li>4 Users</li>
+            <li>All apps</li>
+            <li>Unlimited editable exports</li>
+            <li>Folders and collaboration</li>
+            <li>All incoming apps</li>
+          </ul>
+          <button className="mt-6 bg-gray-900 py-2 px-4 rounded">Go to pro</button>
+        </div>
+        <div className="bg-gray-800 p-8 rounded-lg shadow-lg w-full max-w-xs">
+          <h2 className="text-xl font-semibold">Free</h2>
+          <h3 className="text-4xl font-bold mt-4">$16</h3>
+          <ul className="mt-6 space-y-2">
+            <li>2 Users</li>
+            <li>2 Files</li>
+            <li>Public Share & Comments</li>
+            <li>Chat Support</li>
+            <li>New income apps</li>
+          </ul>
+          <button className="mt-6 bg-purple-600 py-2 px-4 rounded">Signup for free</button>
+        </div>
+      </div>
+    </div>
   );
 };
 

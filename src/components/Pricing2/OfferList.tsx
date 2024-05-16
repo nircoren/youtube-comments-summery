@@ -13,16 +13,18 @@ const crossIcon = (
 const OfferList = ({
   text,
   status,
+  isHighlighted
 }: {
   text: string;
   status: "active" | "inactive";
+  isHighlighted?:boolean
 }) => {
   return (
-    <div className="mb-3 flex items-center">
-      <span className="mr-3 flex h-[18px] w-full max-w-[18px] items-center justify-center rounded-full bg-primary bg-opacity-10 text-primary">
+    <div className="mb-5 flex items-center">
+      <span className="mr-3 flex h-[18px] w-full max-w-[18px] items-center justify-center rounded-full bg-purple text-innercard">
         {status === "active" ? checkIcon : crossIcon}
       </span>
-      <p className="m-0 text-base font-medium text-body-color">{text}</p>
+      <p className={`m-0 text-base font-medium text-body-color ${isHighlighted ? "text-realBlack" : "text-body-color"}`}>{text}</p>
     </div>
   );
 };
