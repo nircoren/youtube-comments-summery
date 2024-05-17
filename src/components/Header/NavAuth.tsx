@@ -1,8 +1,13 @@
 import { signIn, signOut, useSession } from "next-auth/react";
 import Link from "next/link";
 
-export default function LoginGoogle() {
+export default function LoginGoogle({
+  closeNavBar,
+}: {
+  closeNavBar: Function;
+}) {
   const { data: session, status } = useSession();
+  const isMenuOpen = false;
   return (
     // <button onClick={() => signIn('google')}>Sign in with Google</button>
     <>
@@ -16,14 +21,18 @@ export default function LoginGoogle() {
                 className="w-12 rounded-full ml-4"
                 src={session.user?.image ?? ""}
                 alt=""
+                onClick={() => closeNavBar()}
               />
-              <div className="dropdown-content z-[1] menu" tabIndex={0}>
-                <ul className="p-2 shadow bg-base-100 rounded-box w-52 divide-y">
-                  <li className="p-2">Signed in as {session.user?.name}</li>
-                  <li>
-                    <a>Item 1</a>
+              <div
+                className="p-0 mt-4 bg-dark border-[.5px] border-body-color/50 rounded 
+              dropdown-content z-[1] menu"
+                tabIndex={0}
+              >
+                <ul className="shadow rounded-box w-52 divide-y dark:text-white">
+                  <li className="px-4 py-2">
+                    Signed in as {session.user?.name}
                   </li>
-                  <li>
+                  {/* <li>
                     <a>
                       <Link
                         href="/settings"
@@ -32,9 +41,11 @@ export default function LoginGoogle() {
                         Billing
                       </Link>
                     </a>
-                  </li>
-                  <li>
-                    <a onClick={() => signOut()}>Sign out</a>
+                  </li> */}
+                  <li className="hover:bg-menuItemHover border-radius: 0">
+                    <a className="px-4 py-2" onClick={() => signOut()}>
+                      Sign out
+                    </a>
                   </li>
                 </ul>
               </div>

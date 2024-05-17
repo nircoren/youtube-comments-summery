@@ -1,5 +1,5 @@
 import type { Config } from "tailwindcss";
-import colors from 'tailwindcss/colors'
+import colors from "tailwindcss/colors";
 
 const config: Config = {
   content: [
@@ -38,14 +38,15 @@ const config: Config = {
         transparent: "transparent",
         white: "#FFFFFF",
         black: "#121723",
-        realBlack:"#000000",
+        realBlack: "#000000",
         innercard: "#4d5367",
-        paleBtn:"#5e6b84",
+        menuItemHover: "#3e3e3e",
+        paleBtn: "#5e6b84",
         dark: "#121723",
         primary: "#4A6CF7",
         yellow: "#FBB040",
-        purple:"#7d54f1",
-        darkPurple:'#8547f9',
+        purple: "#7d54f1",
+        darkPurple: "#8547f9",
         "bg-color-dark": "#171C28",
         "body-color": {
           DEFAULT: "#FFFFFF",
@@ -86,8 +87,6 @@ const config: Config = {
       },
     },
   },
-  plugins: [
-    require('daisyui'),
-  ],
+  plugins: [require("daisyui")],
 };
 export default config;

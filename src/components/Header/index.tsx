@@ -17,6 +17,9 @@ const Header = () => {
   const navbarToggleHandler = () => {
     setNavbarOpen(!navbarOpen);
   };
+  const closeNavBar = () => {
+    setNavbarOpen(false);
+  }
 
   // Sticky Navbar
   const [sticky, setSticky] = useState(false);
@@ -102,11 +105,13 @@ const Header = () => {
                         {menuItem.path ? (
                           <Link
                             href={menuItem.path}
-                            className={`flex py-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${
-                              usePathName === menuItem.path
-                                ? "text-primary dark:text-white"
-                                : "text-dark hover:text-primary dark:text-white/70 dark:hover:text-white"
-                            }`}
+                            className={`flex py-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 text-dark hover:text-primary dark:text-white/70 dark:hover:text-white
+                          
+                            //   usePathName === menuItem.path
+                            //     ? "text-primary dark:text-white"
+                            //     : "text-dark hover:text-primary dark:text-white/70 dark:hover:text-white"
+                            // }
+                            `}
                           >
                             {menuItem.title}
                           </Link>
@@ -154,11 +159,11 @@ const Header = () => {
               </div>
               <div className="flex items-center justify-end pr-16 lg:pr-0">
                 <SessionProvider>
-                  <NavAuth/>
+                  <NavAuth closeNavBar={closeNavBar}/>
                 </SessionProvider>
-                <div>
+                {/* <div>
                   <ThemeToggler />
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

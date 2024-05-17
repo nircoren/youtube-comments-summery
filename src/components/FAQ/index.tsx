@@ -3,6 +3,7 @@ import Accordion from "./Accordion";
 function FAQ() {
   return (
     <section
+    id="faq"
       className="relative z-10 overflow-hidden bg-white
   pt-[60px] dark:bg-gray-dark md:pb-[60px] md:pt-[60px] xl:pb-[100px] xl:pt-[100px] 2xl:pb-[40px] 2xl:pt-[40px]
   "

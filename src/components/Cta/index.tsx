@@ -8,7 +8,7 @@ function Cta() {
     "
     >
       <div className="container flex flex-col items-center">
-        <h3>Summerize Your Comments Now!</h3>
+        <h3 className="text-center sm:text-center md:text-center">Summerize Your Comments Now!</h3>
         <p className="text-base max-w-screen-sm text-center text-white mb-8">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
           deserunt optio quod, error totam maiores sit et? Provident praesentium

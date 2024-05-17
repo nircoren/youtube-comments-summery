@@ -6,23 +6,19 @@ import nodemailer from 'nodemailer'
 
 
 
-export async function POST(request: any) {
+export async function POST(request: Request) {
 
     const username = process.env.NEXT_PUBLIC_EMAIL_USERNAME;
     const password = process.env.NEXT_PUBLIC_EMAIL_PASSWORD;
     const myEmail = process.env.NEXT_PUBLIC_PERSONAL_EMAIL;
-
-
     console.log("dealing with request")
-    const formData = await request.formData()
-    const name = formData.get('name')
-    const email = formData.get('email')
-    const message = formData.get('message')
-
     debugger
+    const formData = await request.json()
+    const {name,email,message} = formData
+
     // create transporter object
     const transporter = nodemailer.createTransport({
-        host: "smtp-relay.brevo.com",
+        host: "smtp.mailersend.net",
         port: 587,
         tls: {
             ciphers: "SSLv3",
@@ -49,10 +45,11 @@ export async function POST(request: any) {
             <p>Message: ${message} </p>
             `,
         })
-
+        
         return NextResponse.json({ message: "Success: email was sent" })
 
     } catch (error) {
+        debugger
         console.log(error)
         return NextResponse.json(
             { error },

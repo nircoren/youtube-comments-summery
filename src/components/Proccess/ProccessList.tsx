@@ -6,7 +6,7 @@ interface ProcessStepProps {
   
   const ProcessStep: React.FC<ProcessStepProps> = ({ number, title, description }) => (
     <div className="flex items-start mb-8">
-      <div className="flex-shrink-0 w-8 h-8 bg-purple-500 text-white rounded-full flex items-center justify-center text-lg font-bold mr-4">
+      <div className="flex-shrink-0 w-8 h-8 bg-purple text-white rounded-full flex items-center justify-center text-lg font-bold mr-4">
         {number}
       </div>
       <div>
@@ -22,17 +22,17 @@ const ProccessList = () => (
     <ProcessStep
       number="1"
       title="Login to google account"
-      description="With lots of unique blocks, you can easily build a page without coding."
+      description="lorem"
     />
     <ProcessStep
       number="2"
-      title="Assign related people"
-      description="With lots of unique blocks, you can easily build a page without coding."
+      title="Click a youtube video"
+      description="lorem"
     />
     <ProcessStep
       number="3"
-      title="Make it done on-time"
-      description="With lots of unique blocks, you can easily build a page without coding."
+      title="See comments summery"
+      description="lorem"
     />
   </div>
 );

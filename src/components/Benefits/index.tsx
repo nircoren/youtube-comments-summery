@@ -3,16 +3,17 @@ import BenefitsList from "./BenefitsList";
 function Benefits() {
   return (
     <section
+    id="benefits"
       className="relative z-10 overflow-hidden bg-white
-    pt-[60px] dark:bg-gray-dark md:pb-[60px] md:pt-[60px] xl:pb-[100px] xl:pt-[100px] 2xl:pb-[40px] 2xl:pt-[40px]
+      pb-[60px] pt-[60px] dark:bg-gray-dark md:pb-[60px] md:pt-[60px] xl:pb-[100px] xl:pt-[100px] 2xl:pb-[40px] 2xl:pt-[40px]
     "
     >
-      <div className="container flex">
+      <div className="container flex lg:flex-row md:flex-row sm:flex-col sm:justify-center xs:flex-col">
         <div className="container">
           <BenefitsList />
         </div>
-        <div className="container">
-          <img className="h-fit max-h-96" src="/benefits.png" alt="" />
+        <div className="container py-8">
+          <img className="h-fit max-h-96" src="/youtube-ui.jpg" alt="" />
         </div>
       </div>
     </section>
