@@ -8,11 +8,11 @@ const Pricing = () => {
   const [isMonthly, setIsMonthly] = useState(true);
 
   return (
-    <section id="pricing" className="relative z-10 py-16 md:py-20 lg:py-28">
+    <section id="pricing" className="anchor relative z-10 py-16 md:py-20 lg:py-28">
       <div className="container">
         <SectionTitle
-          title="Pick your poison"
-          paragraph="Ready to declutter your YouTube experience? Get started for free and never look back."
+          title="Pricing plans"
+          paragraph=""
           center
           width="665px"
         />
@@ -38,7 +38,7 @@ const Pricing = () => {
                 <div
                   className={`${
                     isMonthly ? "" : "translate-x-full"
-                  } shadow-switch-1 absolute left-0 top-[-4px] flex h-7 w-7 items-center justify-center rounded-full bg-primary transition`}
+                  } shadow-switch-1 absolute left-0 top-[-4px] flex h-7 w-7 items-center justify-center rounded-full bg-darkPurple transition`}
                 >
                   <span className="active h-4 w-4 rounded-full bg-white"></span>
                 </div>
@@ -64,39 +64,26 @@ const Pricing = () => {
             duration={isMonthly ? "mo" : "yr"}
             subtitle=""
           >
-            <OfferList text="All UI Components" status="active" />
-            <OfferList text="Use with Unlimited Projects" status="active" />
-            <OfferList text="Commercial Use" status="active" />
-            <OfferList text="Email Support" status="active" />
-            <OfferList text="Lifetime Access" status="inactive" />
-            <OfferList text="Free Lifetime Updates" status="inactive" />
+            <OfferList text="10 Free YouTube video comments summaries" status="active" />
           </PricingBox>
           <PricingBox
             packageName="Pro"
-            price={isMonthly ? "399" : "789"}
+            price={isMonthly ? "12" : "100"}
             duration={isMonthly ? "mo" : "yr"}
             subtitle=""
             isHighlighted={true}
           >
-            <OfferList text="All UI Components" status="active" isHighlighted={true}/>
-            <OfferList text="Use with Unlimited Projects" status="active" isHighlighted={true}/>
-            <OfferList text="Commercial Use" status="active" isHighlighted={true}/>
-            <OfferList text="Email Support" status="active" isHighlighted={true}/>
-            <OfferList text="Lifetime Access" status="active" isHighlighted={true}/>
-            <OfferList text="Free Lifetime Updates" status="inactive" isHighlighted={true}/>
+            <OfferList text="1000 YouTube video comments summaries per month" status="active" isHighlighted={true}/>
+            <OfferList text="premium support" status="active" isHighlighted={true}/>
           </PricingBox>
           <PricingBox
             packageName="Pro S"
-            price={isMonthly ? "589" : "999"}
+            price={isMonthly ? "50" : "500"}
             duration={isMonthly ? "mo" : "yr"}
             subtitle=""
           >
-            <OfferList text="All UI Components" status="active" />
-            <OfferList text="Use with Unlimited Projects" status="active" />
-            <OfferList text="Commercial Use" status="active" />
-            <OfferList text="Email Support" status="active" />
-            <OfferList text="Lifetime Access" status="active" />
-            <OfferList text="Free Lifetime Updates" status="active" />
+            <OfferList text="10000 YouTube video comments summaries per month" status="active"/>
+            <OfferList text="premium support" status="active"/>
           </PricingBox>
         </div>
       </div>

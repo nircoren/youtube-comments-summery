@@ -4,7 +4,7 @@ function Benefits() {
   return (
     <section
     id="benefits"
-      className="relative z-10 overflow-hidden bg-white
+      className="anchor relative z-10 bg-white
       pb-[60px] pt-[60px] dark:bg-gray-dark md:pb-[60px] md:pt-[60px] xl:pb-[100px] xl:pt-[100px] 2xl:pb-[40px] 2xl:pt-[40px]
     "
     >

@@ -4,14 +4,12 @@ import Rating from "../Rating";
 function SocialProof() {
   return (
     <section
-      className="relative z-10 overflow-hidden
-    pt-[60px] dark:bg-gray-dark md:pb-[60px] md:pt-[60px] xl:pb-[100px] xl:pt-[100px] 2xl:pb-[40px] 2xl:pt-[40px]
-    "
+      className="anchor relative z-10 py-[60px] dark:bg-gray-dark md:pb-[60px] md:pt-[60px] xl:pb-[100px] xl:pt-[100px] 2xl:pb-[40px] 2xl:pt-[40px]"
     >
-      <div className="container flex justify-center align-center gap-x-36">
+      <div className="container flex justify-center items-center flex-col gap-x-5 lg:flex-row lg:gap-x-36">
         <div className="avatar flex items-center">
           <div className="h-48 rounded-full">
-            <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+            <img src="/person/person1.jpeg" />
           </div>
         </div>
         <div className="max-w-md">
@@ -19,13 +17,15 @@ function SocialProof() {
             <Rating />
           </div>
           <p className="text-white mb-3">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
-            sed veniam fugit exercitationem reiciendis, ipsum nulla illum natus
-            sequi quos error tempore explicabo et assumenda eveniet placeat
-            magnam impedit aspernatur.
+            I have been using Summarize Youtube comments for a few months now
+            and I am absolutely blown away by its efficiency and convenience.
+            This software has truly saved me so much time by summarizing all the
+            comments on a Youtube video into one concise and easy-to-read
+            format. No more scrolling through endless comments to find the
+            relevant ones, Summarize does it all for me in a matter of seconds.
           </p>
           <p className="text-white">
-            John Jones, <b>Web Developer</b>
+            John Brown, <b>Web Developer</b>
           </p>
         </div>
       </div>

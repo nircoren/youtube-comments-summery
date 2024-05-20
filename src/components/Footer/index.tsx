@@ -5,13 +5,13 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <>
-      <footer className="relative z-10 bg-white pt-16 dark:bg-gray-dark md:pt-20 lg:pt-24">
+      <footer className="relative z-10 bg-white pt-5 dark:bg-gray-dark md:pt-6 lg:pt-6">
         <div className="container">
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4 md:w-1/2 lg:w-4/12 xl:w-5/12">
-              <div className="mb-12 max-w-[360px] lg:mb-16">
+              {/* <div className="mb-12 max-w-[360px] lg:mb-16">
                 <Link href="/" className="mb-8 inline-block">
-                  <h2 className="gradient-text lg:text-2xl">Summerize YT</h2>
+                  <h2 className="gradient-text lg:text-2xl">Summarize YT</h2>
                 </Link>
                 <p className="mb-9 text-base leading-relaxed text-body-color dark:text-body-color-dark">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -93,9 +93,9 @@ const Footer = () => {
                     </svg>
                   </a>
                 </div>
-              </div>
+              </div> */}
             </div>
-{/* 
+{/*
             <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
               <div className="mb-12 lg:mb-16">
                 <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
@@ -198,15 +198,18 @@ const Footer = () => {
               </div>
             </div> */}
           </div>
-          <div id="copyrights" className="text-body-color -mx-4 flex flex-wrap pb-6">
-              <div className=" w-full px-4 md:w-1/2 lg:w-4/12 xl:w-5/12">
+          <div id="copyrights" className="text-body-color -mx-4 flex flex-wrap justify-center md:justify-start pb-6">
+              <div className="w-full px-4 lg:w-1/2 lg:w-4/12 xl:w-5/12">
                 <p className="inline">
-                  <span>© 2022 Biccas Inc. Copyright and rights reserved</span>
+                  <span>© 2024 NC Copyright and rights reserved</span>
                 </p>
               </div>
               <p className="px-4">
-                <span>terms of service </span>
-                <span>privacy policy</span>
+                <Link href="/tos">terms of service</Link>
+                <> &#8226; </>
+                <Link href="/privacy-policy">privacy policy</Link>
+                <> &#8226; </>
+                <Link href="/refund-policy">refund policy</Link>
               </p>
             </div>
         </div>

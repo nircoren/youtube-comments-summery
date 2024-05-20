@@ -31,27 +31,35 @@ const FAQItem: React.FC<FAQItemProps> = ({ question, answer, isLast }) => {
 const FAQ: React.FC = () => {
   const faqs = [
     {
-      question: "How to setup Shade Pro?",
+      question: "How to set up summarize YouTube comments?",
       answer:
-        "With lots of unique blocks, you can easily build a page with coding. Build your next landing page. Integer ut obe ryn. Sed feugiat vitae turpis a porta.",
+        "Simply install the extension, register on website using your google account, pick your plan, make payment and start using.",
     },
     {
-      question: "Can I use Shade Pro for my clients?",
-      answer: "Yes, you can use Shade Pro for your clients.",
+      question: "Where will the summery be displayed?",
+      answer: "The summery is directly under the video discription. Stevie Wonder didn't miss it so you will probably be fine.",
     },
     {
-      question: "How often do you release updates?",
+      question: "What technology is used to make the summary?",
       answer:
-        "We release updates regularly to improve the product and add new features.",
+        "We use gpt4-o ai engine.",
     },
     {
-      question: "How can I access to old version?",
-      answer: "You can access the old version by contacting our support team.",
+      question: "Can i see the summery in mobile?",
+      answer: "Nope. There aren't chrome extensions for mobile yet.",
+    },
+    {
+      question: "Do you offer refunds?",
+      answer: "Nope. No refunds.",
+    },
+    {
+      question: "How do i cancel my subscription?",
+      answer: "Just send us an email and we will cancel your subscription.",
     },
   ];
 
   return (
-    <div className="max-w-2xl mx-auto p-6 bg-white shadow-md rounded-lg">
+    <div className="lg:max-w-2xl lg:mx-auto p-6 bg-white shadow-md rounded-lg">
       {faqs.map((faq, index) => (
         <FAQItem
           key={index}

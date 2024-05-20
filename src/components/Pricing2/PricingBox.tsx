@@ -11,7 +11,7 @@ const PricingBox = (props: {
 
   return (
     <div className={`w-full relative ${isHighlighted ? "border-2 rounded-md" : ""}`}>
-      <div className={`z-10 rounded-md px-8 py-10 shadow-three hover:shadow-one dark:shadow-two dark:hover:shadow-gray-dark ${isHighlighted ? 'bg-darkPurple': 'dark:bg-gray-dark'}`}>
+      <div className={`z-10 h-full rounded-md px-8 py-10 shadow-three hover:shadow-one dark:shadow-two dark:hover:shadow-gray-dark ${isHighlighted ? 'bg-darkPurple': 'dark:bg-gray-dark'}`}>
         <div className="flex justify-center">
           <h5 className="font-semibold text-realBlack w-20 py-1 text-center rounded-2xl mb-6 bg-white/75">
             {packageName}

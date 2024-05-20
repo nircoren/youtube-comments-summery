@@ -31,7 +31,7 @@ const ContactForm: React.FC = () => {
   };
 
   return (
-    <div className="max-w-md mx-auto bg-gray-800 p-8 rounded-lg shadow-lg">
+    <div className="lg:max-w-md mx-auto bg-gray-800 p-8 rounded-lg shadow-lg">
       <form onSubmit={handleSubmit}>
         <div className="mb-4">
           <label className="block text-gray-300 mb-2" htmlFor="name">

@@ -43,7 +43,7 @@ const config: Config = {
         menuItemHover: "#3e3e3e",
         paleBtn: "#5e6b84",
         dark: "#121723",
-        primary: "#4A6CF7",
+        primary: "#8547f9",
         yellow: "#FBB040",
         purple: "#7d54f1",
         darkPurple: "#8547f9",
