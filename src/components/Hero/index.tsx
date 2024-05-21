@@ -30,7 +30,7 @@ const Hero = () => {
                         Go Pro
                     </Link>
                     <Link
-                      href="https://chromewebstore.google.com/detail/merlin-1-click-access-to/camppjleccjaphfdbohjdohecfnoikec"
+                      href="https://chromewebstore.google.com"
                       target="_blank"
                       rel="noreferrer"
                       className="btn items-left justify-center whitespace-nowrap font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 rounded-md text-lg bg-cornblue-600 text-zinc-100 shadow hover:bg-cornblue-600/90 hidden h-16 w-fit md:flex space-x-3"
