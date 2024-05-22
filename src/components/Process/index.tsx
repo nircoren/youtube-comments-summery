@@ -10,8 +10,11 @@ function Process() {
     >
       <div className="container flex flex-col md:flex-row">
         <div className="container pt-8">
-          <video muted  preload="none" autoPlay>
-            <source src="/process.mp4" type="video/mp4" />
+        <iframe width="600" height="400" src="https://www.youtube.com/embed/IrFFOBziSQo" title="" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+       ></iframe>
+          {/* <video muted preload="none" autoPlay>
+            <source src="/https://youtu.be/IrFFOBziSQo" type="video/mp4" />
             <track
               src="/path/to/captions.vtt"
               kind="subtitles"
@@ -19,7 +22,7 @@ function Process() {
               label="English"
             />
             Your browser does not support the video tag.
-          </video>
+          </video> */}
         </div>
         <div className="container ">
           <ProcessList />

@@ -97,9 +97,9 @@ type SummaryResponse = {
 
 const test = {
   commentsSummery: [
-    "Viewers are in awe of the seal's adorable and fluffy nature, comparing it to a mix of a puppy, kitten, and bear cub.",
-    "Many find the seal's vocalizations and interactions with humans endearing and entertaining.",
-    "Some commenters express admiration for the seal's innocence and curiosity towards its surroundings, finding it heartwarming.",
+    "👍 Viewers are in awe of the seal's adorable and fluffy nature, comparing it to a mix of a puppy, kitten, and bear cub.",
+    "👍 Many find the seal's vocalizations and interactions with humans endearing and entertaining.",
+    "👍 Some commenters express admiration for the seal's innocence and curiosity towards its surroundings, finding it heartwarming.",
   ],
   topComments: [
     {

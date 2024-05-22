@@ -64,7 +64,7 @@ const Header = () => {
                   sticky ? "py-5 lg:py-2" : "py-8"
                 } `}
               >
-                <h2 className="gradient-text lg:text-2xl">Summarize YT</h2>
+                <img src="./logo.png" alt="" />
               </Link>
             </div>
             <div className="flex w-full items-center justify-between px-4">
