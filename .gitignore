@@ -8,7 +8,7 @@
 .env
 
 /prisma/mytest.db
-
+/prisma/migrations
 # testing
 /coverage
 

@@ -23,18 +23,24 @@ async function _testInsertUser() {
       throw new Error("Email or name undefined.");
     }
     // Find the user in the database
-    const User = await prisma.user.upsert({
-      where: {
-        email,
-      },
-      update: {},
-      create: {
-        email,
-        name,
-        props: {
-          create: {
+    try {
+      const User = await prisma.user.upsert({
+        where: {
+          email,
+        },
+        update: {},
+        create: {
+          email,
+          name,
+          props: {
+            create: {
+            },
           },
         },
-      },
-    });
+      });
+      return User
+    } catch {
+      return 'there was and error'
+    }
+
 }
