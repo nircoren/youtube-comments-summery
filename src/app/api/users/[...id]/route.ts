@@ -3,9 +3,8 @@ import { NextRequest, NextResponse } from "next/server";
 import prisma from "../../../lib/prisma";
 
 export async function GET(req: Request, context: any) {
-  debugger;
   // const { email } = await req.json();
-  const { strId } = context.params;
+  const { id : strId } = context.params;
   const id = parseInt(strId);
   try {
     const user = await prisma.user.findFirst({
