@@ -10,8 +10,8 @@ import FAQ from "@/components/FAQ";
 import Contact2 from "@/components/Contact2";
 
 export const metadata: Metadata = {
-  title: "Free Next.js Template for Startup and SaaS",
-  description: "This is Home for Startup Nextjs Template",
+  title: "Summarize YouTube Comments",
+  description: "",
   // other metadata
 };
 
