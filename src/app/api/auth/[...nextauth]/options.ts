@@ -17,8 +17,6 @@ export const options: NextAuthOptions = {
     async signIn({ account, profile }): Promise<string | boolean> {
       if (account?.provider === "google") {
         try {
-          debugger
-          // Assuming `email` is available on profile object
           const email = profile?.email;
           const name = profile?.name;
           if (!email || !name) {
