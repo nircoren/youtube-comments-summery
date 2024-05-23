@@ -42,7 +42,7 @@ const Hero = () => {
                         viewBox="0 0 24 24"
                         className="h-7 w-7 shrink-0"
                       >
-                        <g clip-path="url(#chrome-logo_svg__a)">
+                        <g clipPath="url(#chrome-logo_svg__a)">
                           <path
                             fill="#fff"
                             d="M11.987 17.986a5.967 5.967 0 1 0 0-11.934 5.967 5.967 0 0 0 0 11.934"
