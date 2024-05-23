@@ -8,12 +8,12 @@ function validateUser() {
 
 export async function GET() {
     const users = await prisma.user.findMany()
-    return NextResponse.json({ props: { users } });
+    return NextResponse.json({ users });
 }
 
 export async function POST() {
-    const user = _testInsertUser()
-    return NextResponse.json({ props: { user } });
+    const user = await _testInsertUser()
+    return NextResponse.json({ user });
 }
 
 async function _testInsertUser() {
