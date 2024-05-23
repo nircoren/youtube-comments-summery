@@ -27,4 +27,5 @@ model Props {
   user User @relation(fields: [userId], references: [id])
   isPayed Int @default(0)
   videoUsedCount Int @default(0)
+  isAdmin Int  @default(0)
 }
