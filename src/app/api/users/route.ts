@@ -39,8 +39,8 @@ async function _testInsertUser() {
         },
       });
       return User
-    } catch {
-      return 'there was and error'
+    } catch (error) {
+      return error
     }
 
 }
