@@ -11,8 +11,8 @@ export function NavigationEvents() {
   useEffect(() => {
     const url = `${pathname}?${searchParams}`;
     if (searchParams.get("lg") == "1") {
-      toast.success("Successfuly logged in.");
       window.history.replaceState(null, "", "/");
+      toast.success("Successfuly logged in.");
     }
   }, []);
 
