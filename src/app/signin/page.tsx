@@ -4,7 +4,7 @@ import { signIn, signOut, useSession } from "next-auth/react";
 
 const SigninPage = () => {
   const onSignin = async () => {
-    await signIn("google", { callbackUrl: '/?login=true' });
+    await signIn("google", { callbackUrl: '/?lg=1' });
   };
   return (
     <>
