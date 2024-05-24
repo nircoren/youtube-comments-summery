@@ -1,6 +1,7 @@
 import Link from "next/link";
 import AvatarGroup from "../AvatarGroup";
 import Rating from "../Rating";
+
 const Hero = () => {
   return (
     <>
@@ -73,8 +74,8 @@ const Hero = () => {
                             y2="5.309"
                             gradientUnits="userSpaceOnUse"
                           >
-                            <stop stop-color="#1E8E3E"></stop>
-                            <stop offset="1" stop-color="#34A853"></stop>
+                            <stop stopColor="#1E8E3E"></stop>
+                            <stop offset="1" stopColor="#34A853"></stop>
                           </linearGradient>
                           <linearGradient
                             id="chrome-logo_svg__c"
@@ -84,8 +85,8 @@ const Hero = () => {
                             y2="6.085"
                             gradientUnits="userSpaceOnUse"
                           >
-                            <stop stop-color="#FCC934"></stop>
-                            <stop offset="1" stop-color="#FBBC04"></stop>
+                            <stop stopColor="#FCC934"></stop>
+                            <stop offset="1" stopColor="#FBBC04"></stop>
                           </linearGradient>
                           <linearGradient
                             id="chrome-logo_svg__d"
@@ -95,8 +96,8 @@ const Hero = () => {
                             y2="7.545"
                             gradientUnits="userSpaceOnUse"
                           >
-                            <stop stop-color="#D93025"></stop>
-                            <stop offset="1" stop-color="#EA4335"></stop>
+                            <stop stopColor="#D93025"></stop>
+                            <stop offset="1" stopColor="#EA4335"></stop>
                           </linearGradient>
                           <clipPath id="chrome-logo_svg__a">
                             <path fill="#fff" d="M0 0h24v24H0z"></path>

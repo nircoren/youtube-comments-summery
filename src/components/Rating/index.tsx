@@ -7,7 +7,7 @@ function Rating() {
     <input type="radio" name="rating-4" className="mask mask-star-2 bg-orange-500"  />
     <input type="radio" name="rating-4" className="mask mask-star-2 bg-orange-500" />
     <input type="radio" name="rating-4" className="mask mask-star-2 bg-orange-500" />
-    <input type="radio" name="rating-4" className="mask mask-star-2 bg-orange-500" checked/>
+    <input type="radio" name="rating-4" className="mask mask-star-2 bg-orange-500" defaultChecked/>
   </div>
   );
 }

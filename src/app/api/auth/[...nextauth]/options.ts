@@ -48,9 +48,9 @@ export const options: NextAuthOptions = {
 
       return true;
     },
-    async redirect({ url, baseUrl }) {
-      return baseUrl
-    },
+    // async redirect({ url, baseUrl }) {
+    //   return ''
+    // },
   },
 
 };

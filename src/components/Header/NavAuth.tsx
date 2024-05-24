@@ -8,13 +8,13 @@ export default function LoginGoogle({
 }) {
   const { data: session, status } = useSession();
 
-  if (status === 'loading') {
-    return <p>Loading...</p>;
+  if (status === "loading") {
+    return <img style={{ maxHeight: "50px" }} src="./loading.gif" alt="" />;
   }
 
   return (
     <>
-      {status === 'authenticated' ? (
+      {status === "authenticated" ? (
         <div className="dropdown dropdown-bottom dropdown-end">
           <img
             tabIndex={0}
@@ -29,9 +29,7 @@ export default function LoginGoogle({
             tabIndex={0}
           >
             <ul className="shadow rounded-box w-52 divide-y dark:text-white">
-              <li className="px-4 py-2">
-                Signed in as {session.user?.name}
-              </li>
+              <li className="px-4 py-2">Signed in as {session.user?.name}</li>
               <li className="hover:bg-menuItemHover border-radius: 0">
                 <a className="px-4 py-2" onClick={() => signOut()}>
                   Sign out

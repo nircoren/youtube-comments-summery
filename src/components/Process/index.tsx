@@ -10,9 +10,12 @@ function Process() {
     >
       <div className="container flex flex-col md:flex-row">
         <div className="container pt-8">
-        <iframe width="600" height="400" src="https://www.youtube.com/embed/IrFFOBziSQo" title="" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-       ></iframe>
+          <iframe
+            style={{ minHeight: "300px", width:"100%" }}
+            src="https://www.youtube.com/embed/IrFFOBziSQo"
+            title=""
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          ></iframe>
           {/* <video muted preload="none" autoPlay>
             <source src="/https://youtu.be/IrFFOBziSQo" type="video/mp4" />
             <track

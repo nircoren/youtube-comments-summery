@@ -150,6 +150,7 @@ export async function POST(req: Request, context: any) {
   //     status: 200,
   //   }
   // );
+  const [pro, proS] = [1,2]
   const { email } = await req.json();
   const { video_id } = context.params;
   try {
@@ -165,6 +166,20 @@ export async function POST(req: Request, context: any) {
     if ((!props.isPayed  && props.videoUsedCount >= 10)) {
       return NextResponse.json(
         { responseText: "You reached your limit. Please buy subscription to keep using youtube-summery." },
+        {
+          status: 403,
+        }
+      );
+    } else if  (props.isPayed == pro && props.videoUsedCount >= 1000) {
+      return NextResponse.json(
+        { responseText: "You reached your limit. You can upgrade your subscription." },
+        {
+          status: 403,
+        }
+      );
+    } else if (props.isPayed == proS && props.videoUsedCount >= 10000) {
+      return NextResponse.json(
+        { responseText: "You reached your limit. You can upgrade your subscription." },
         {
           status: 403,
         }
