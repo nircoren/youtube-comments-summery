@@ -60,7 +60,7 @@ const SigninPage = () => {
                 </button>
                 <p className="text-center text-base font-medium text-body-color">
                   Don't you have an account?{" "}
-                  <Link href="/signup" className="text-primary hover:underline">
+                  <Link href="/signup" className="underline hover:text-blue">
                     Sign up
                   </Link>
                 </p>

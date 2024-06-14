@@ -47,6 +47,7 @@ const config: Config = {
         yellow: "#FBB040",
         purple: "#7d54f1",
         darkPurple: "#8547f9",
+        blue:"#197abd",
         "bg-color-dark": "#171C28",
         "body-color": {
           DEFAULT: "#FFFFFF",

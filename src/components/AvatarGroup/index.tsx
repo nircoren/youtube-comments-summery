@@ -15,12 +15,12 @@ function AvatarGroup() {
     </div>
     <div className="avatar">
       <div className="w-11">
-        <img src="/person/person4.jpeg" />
+        <img src="/person/person5.jpeg" />
       </div>
     </div>
     <div className="avatar">
       <div className="w-11">
-        <img src="/person/person5.jpeg" />
+        <img src="/person/person4.jpeg" />
       </div>
     </div>
   </div>

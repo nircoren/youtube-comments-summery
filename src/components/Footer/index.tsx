@@ -199,7 +199,7 @@ const Footer = () => {
             </div> */}
           </div>
           <div id="copyrights" className="text-body-color -mx-4 flex flex-wrap justify-center md:justify-start pb-6">
-              <div className="w-full px-4 lg:w-1/2 lg:w-4/12 xl:w-5/12">
+              <div className="w-full text-center lg:text-left px-4 lg:w-1/2 lg:w-4/12 xl:w-5/12">
                 <p className="inline">
                   <span>© 2024 NC Copyright and rights reserved</span>
                 </p>

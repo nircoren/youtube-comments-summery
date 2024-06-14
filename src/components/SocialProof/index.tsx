@@ -25,7 +25,7 @@ function SocialProof() {
             relevant ones, Summarize does it all for me in a matter of seconds.
           </p>
           <p className="text-white">
-            John Brown, <b>Web Developer</b>
+            Dor Cohen, <b>Web Developer</b>
           </p>
         </div>
       </div>

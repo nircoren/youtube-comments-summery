@@ -1,6 +1,6 @@
 function Tos() {
   const lastUpdated = "20/05/2024";
-  const companyName = "NC Digital Solutions";
+  const companyName = "Nir Coren";
   const companyShortName = "Summerize YouTube Comments";
   const registeredCountry = "Israel";
   const RegisteredAddress = "Tel Aviv";
@@ -77,7 +77,7 @@ function Tos() {
                   <p>
                     <strong>Company</strong> (referred to as either "the
                     Company", "We", "Us" or "Our" in this Agreement) refers to
-                    NC digital solutions, Yuval street, Hannaton, Israel.
+                    {companyName}, Yuval street, Hannaton, Israel.
                   </p>
                 </li>
                 <li>

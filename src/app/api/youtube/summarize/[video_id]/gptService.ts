@@ -18,6 +18,7 @@ You must adhere to the following:
 4. Be casual - don't sound like a typical language model.
 5. Summary must be returned as a JSON array, with each item as a different bullet.
 6. Add a fun emoji to the start of each row that describes it.
+7. if there are no comments, return empty.
 `;
 
   try {
