@@ -5,7 +5,7 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <>
-      <footer className="mt-auto bottom-0 w-full z-10 bg-white pt-5 dark:bg-gray-dark md:pt-6 lg:pt-6">
+      <footer className="mt-auto bottom-0 w-full z-10 bg-white pt-5 dark:primaryText md:pt-6 lg:pt-6">
         <div className="container">
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4 md:w-1/2 lg:w-4/12 xl:w-5/12">
@@ -98,7 +98,7 @@ const Footer = () => {
 {/*
             <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
               <div className="mb-12 lg:mb-16">
-                <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
+                <h2 className="mb-10 text-xl font-bold  dark:">
                   Useful Links
                 </h2>
                 <ul>
@@ -132,7 +132,7 @@ const Footer = () => {
 
             <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
               <div className="mb-12 lg:mb-16">
-                <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
+                <h2 className="mb-10 text-xl font-bold  dark:">
                   Terms
                 </h2>
                 <ul>
@@ -166,7 +166,7 @@ const Footer = () => {
 
             <div className="w-full px-4 md:w-1/2 lg:w-4/12 xl:w-3/12">
               <div className="mb-12 lg:mb-16">
-                <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
+                <h2 className="mb-10 text-xl font-bold  dark:">
                   Support & Help
                 </h2>
                 <ul>
@@ -199,7 +199,7 @@ const Footer = () => {
             </div> */}
           </div>
           <div id="copyrights" className="text-body-color -mx-4 flex flex-wrap justify-center md:justify-start pb-6">
-              <div className="w-full text-center lg:text-left px-4 lg:w-1/2 lg:w-4/12 xl:w-5/12">
+              <div className="w-full text-center lg: px-4 lg:w-1/2 lg:w-4/12 xl:w-5/12">
                 <p className="inline">
                   <span>© 2024 NC Copyright and rights reserved</span>
                 </p>

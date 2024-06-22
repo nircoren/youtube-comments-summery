@@ -8,7 +8,7 @@ const Pricing = () => {
   const [isMonthly, setIsMonthly] = useState(true);
 
   return (
-    <section id="pricing" className="anchor relative z-10 py-16 md:py-20 lg:py-28">
+    <section id="pricing" className="anchor relative z-10 py-16 md:py-20 lg:py-28 ">
       <div className="container">
         <SectionTitle
           title="Pricing plans"
@@ -23,8 +23,8 @@ const Pricing = () => {
               onClick={() => setIsMonthly(true)}
               className={`${
                 isMonthly
-                  ? "pointer-events-none text-primary"
-                  : "text-dark dark:text-white"
+                  ? "pointer-events-none"
+                  : "text-dark dark:"
               } mr-4 cursor-pointer text-base font-semibold`}
             >
               Monthly
@@ -48,8 +48,8 @@ const Pricing = () => {
               onClick={() => setIsMonthly(false)}
               className={`${
                 isMonthly
-                  ? "text-dark dark:text-white"
-                  : "pointer-events-none text-primary"
+                  ? "text-dark dark:"
+                  : "pointer-events-none"
               } ml-4 cursor-pointer text-base font-semibold`}
             >
               Yearly

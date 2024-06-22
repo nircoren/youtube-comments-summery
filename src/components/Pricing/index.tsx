@@ -4,7 +4,7 @@ const Pricing: React.FC = () => {
   const [billingCycle, setBillingCycle] = useState<'monthly' | 'yearly'>('monthly');
 
   return (
-    <div className="bg-gray-900 text-white py-16 px-4">
+    <div className="bg-gray-900  py-16 px-4">
       <div className="text-center mb-12">
         <h1 className="text-4xl font-bold">Choose Plan That's Right For You</h1>
         <p className="text-lg mt-2">Choose the plan that works best for you, feel free to contact us</p>

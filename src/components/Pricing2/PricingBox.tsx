@@ -11,14 +11,14 @@ const PricingBox = (props: {
 
   return (
     <div className={`w-full relative ${isHighlighted ? "border-2 rounded-md" : ""}`}>
-      <div className={`z-10 h-full rounded-md px-8 py-10 shadow-three hover:shadow-one dark:shadow-two dark:hover:shadow-gray-dark ${isHighlighted ? 'bg-darkPurple': 'dark:bg-gray-dark'}`}>
+      <div className={`z-10 h-full rounded-md px-8 py-10 shadow-three hover:shadow-one dark:shadow-two dark:hover:shadow-gray-dark ${isHighlighted ? 'bg-darkPurple': 'dark:primaryText'}`}>
         <div className="flex justify-center">
           <h5 className="font-semibold text-realBlack w-20 py-1 text-center rounded-2xl mb-6 bg-white/75">
             {packageName}
           </h5>
         </div>
         <div className="flex items-center justify-center">
-          <h3 className="price mb-6 text-[32px] font-bold text-black dark:text-white">
+          <h3 className="price mb-6 text-[32px] font-bold  dark:">
             $<span className="amount">{price}</span>
             <span className="time text-lg font-medium text-body-color">
               /{duration}

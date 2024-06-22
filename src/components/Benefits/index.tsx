@@ -4,8 +4,8 @@ function Benefits() {
   return (
     <section
     id="benefits"
-      className="anchor relative z-10 bg-white
-      pb-[60px] pt-[60px] dark:bg-gray-dark md:pb-[60px] md:pt-[60px] xl:pb-[100px] xl:pt-[100px] 2xl:pb-[40px] 2xl:pt-[40px]
+      className="anchor relative z-10 Text
+      pb-[60px] pt-[60px] md:pb-[60px] md:pt-[60px] xl:pb-[100px] xl:pt-[100px] 2xl:pb-[40px] 2xl:pt-[40px]
     "
     >
       <div className="container flex flex-col-reverse col-reverse lg:flex-row md:flex-row sm:justify-center xs:flex-col">

@@ -1,30 +1,19 @@
-import React from 'react'
+import React from "react";
 
 function AvatarGroup() {
+  const prefix = "couples";
+  const couples = Array(4).fill(0);
   return (
-    <div className="avatar-group -space-x-6 rtl:space-x-reverse">
-    <div className="avatar">
-      <div className="w-11">
-        <img src="/person/person2.jpeg" />
-      </div>
+    <div className="inline-block avatar-group -space-x-6 rtl:space-x-reverse">
+      {couples.map((couple, index) => (
+        <div className="avatar">
+          <div className="w-12">
+            <img src={`@/../${prefix}/${prefix + (index + 1)}.jpg`} />
+          </div>
+        </div>
+      ))}
     </div>
-    <div className="avatar">
-      <div className="w-11">
-        <img src="/person/person3.jpeg" />
-      </div>
-    </div>
-    <div className="avatar">
-      <div className="w-11">
-        <img src="/person/person5.jpeg" />
-      </div>
-    </div>
-    <div className="avatar">
-      <div className="w-11">
-        <img src="/person/person4.jpeg" />
-      </div>
-    </div>
-  </div>
-  )
+  );
 }
 
-export default AvatarGroup
+export default AvatarGroup;

@@ -34,6 +34,13 @@ const config: Config = {
     },
     extend: {
       colors: {
+        primaryBg: "#f8f8f8",
+        secondaryBg: "#f83e3e",
+        primaryText: "#000000",
+        secondaryText: "#f8f8f8",
+        btnBg:"f8f8f8",
+
+        
         current: "currentColor",
         transparent: "transparent",
         white: "#FFFFFF",
